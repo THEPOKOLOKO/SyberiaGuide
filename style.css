@@ -1,0 +1,63 @@
+body {
+    background-color: #F5F5F5;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #FFF;
+    background-color: #4D4D4D;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+    max-width: 200px; /* exemplo de valor */
+  }
+  
+  a:hover {
+    background-color: #999999;
+  }
+  
+  .icon {
+    width: 30px;
+    margin-right: 10px;
+  }
+  
+  .button-text {
+    font-size: 16px;
+  }
+#content-container {
+  opacity: 0;
+  animation: fade-in 0.5s ease-out forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-out {
+  animation: fade-out 0.5s ease-in forwards;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+  
