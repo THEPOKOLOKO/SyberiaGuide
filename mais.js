@@ -26,3 +26,36 @@ buttons.forEach(function(button) {
     }
   });
 });
+
+const languageSelect = document.getElementById('language-select');
+
+const resources = {
+  'en': {
+    'welcomeMessage': 'Welcome',
+    'selectLanguage': 'Select language:',
+    'continueButton': 'CONTINUE'
+  },
+  'es': {
+    'welcomeMessage': 'Bienvenido',
+    'selectLanguage': 'Seleccionar idioma:',
+    'continueButton': 'CONTINUAR'
+  },
+  'ru': {
+    'welcomeMessage': 'Добро пожаловать',
+    'selectLanguage': 'Выберите язык:',
+    'continueButton': 'ПРОДОЛЖИТЬ'
+  },
+  'pt-br': {
+    'welcomeMessage': 'Bem-vindo',
+    'selectLanguage': 'Selecionar idioma:',
+    'continueButton': 'CONTINUAR'
+  }
+};
+
+function setLanguage() {
+  const lang = languageSelect.value;
+  const languageResources = resources[lang];
+
+  document.querySelector('title').textContent = languageResources.welcomeMessage;
+  document.querySelector('label[for="language-select"]').textContent = languageResources.selectLanguage;
+  document.querySelector('.button').
