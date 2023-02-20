@@ -1,42 +1,55 @@
+/* Estilos para toda a página */
 body {
-  background-color: #F5F5F5;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  vertical-align: top;
+  padding: 20px;
+}
+
+/* Estilos para o cabeçalho */
 .header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 50px;
+  text-align: center;
+  background-color: #312f2f;
+  padding: 20px;
+  border: 2px solid #4D4D4D;
+}
+
+.header h1 {
+  margin: 0;
 }
 
 .header img {
-  width: 200px;
+  max-width: 100%;
+  height: auto;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 50px;
+.header p {
+  margin: 0;
+  line-height: 1.5;
 }
 
-.small-images {
-  display: flex;
-  justify-content: space-between;
-  width: 500px;
-  margin-top: 20px;
-}
-
+/* Estilos para as imagens pequenas */
 .small-images img {
-  width: 100px;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  position: relative;
 }
 
-.content img {
-  width: 500px;
-  margin-top: 50px;
-}
-
+/* Estilos para a lista de texto */
 .text-list {
   list-style: none;
   margin: 0;
@@ -44,17 +57,50 @@ body {
 }
 
 .text-list li {
+  margin-bottom: 10px;
   display: flex;
   align-items: center;
+}
+
+.text-list li img {
+  margin-right: 10px;
+}
+
+.text-list li span {
+  line-height: 1.5;
+  flex: 1;
+}
+
+/* Estilos para a imagem de separação */
+.content img {
+  max-width: 100%;
+  height: auto;
   margin-top: 20px;
-  font-size: 20px;
+  margin-bottom: 20px;
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #4D4D4D;
+}
+.header table {
+  margin: 0 auto;
 }
 
-.text-list img {
-  width: 50px;
-  margin-right: 20px;
+.small-images {
+  text-align: center;
 }
 
-.text-list span {
-  width: 430px;
+.img-caption {
+  text-align: center;
+  margin-top: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+table {
+  border-collapse: collapse;
+}
+
+td img[src$="barbedwire2.png"] {
+  border: none;
 }
