@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title data-translate="welcome">Welcome</title>
+    <title>Welcome</title>
     <link rel="stylesheet" href="index.css" />
     <style>
       body {
@@ -27,73 +27,16 @@
         font-size: 16px;
         border-radius: 5px;
       }
-      .language-select {
-        position: relative;
-        display: inline-block;
-        margin-top: 20px;
-      }
-      .language-select select {
-        width: 150px;
-        padding: 5px;
-        font-size: 16px;
-        border: none;
-        border-radius: 5px;
-        background-color: #007bff;
-        color: #fff;
-        cursor: pointer;
-      }
-      .language-select:after {
-        content: "\25BE";
-        position: absolute;
-        top: 0;
-        right: 0;
-        padding: 5px;
-        background-color: #007bff;
-        color: #fff;
-        font-weight: bold;
-        border-radius: 0 5px 5px 0;
-        cursor: pointer;
-      }
-      .language-options {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background-color: #007bff;
-        color: #fff;
-        font-size: 16px;
-        border-radius: 0 0 5px 5px;
-        z-index: 1;
-        display: none;
-      }
-      .language-options a {
-        display: block;
-        padding: 10px;
-        color: #fff;
-        text-decoration: none;
-      }
-      .language-options a:hover {
-        background-color: #0056b3;
+      #button-wrapper {
+        text-align: center;
       }
     </style>
   </head>
   <body>
-    <div class="language-select">
-      <select id="langSelect">
-        <option value="en">English</option>
-        <option value="pt">Portugues</option>
-        <option value="es">Español</option>
-        <option value="ru">Русский</option>
-      </select>
-      <div class="language-options">
-        <a href="#" data-lang="en">English</a>
-        <a href="#" data-lang="pt">Português</a>
-        <a href="#" data-lang="es">Español</a>
-        <a href="#" data-lang="ru">Русский</a>
-      </div>
+    <div id="button-wrapper">
+      <a href="Symptoms.html" class="button">CONTINUE</a>
     </div>
-    <a href="Symptoms.html" class="button" data-translate="continue">CONTINUE</a>
-    <img id="imagem" src="img/SyberiaIndex.png" data-translate="welcome_image" />
+    <img id="imagem" src="img/SyberiaIndex.png" />
     <script src="index.js"></script>
   </body>
 </html>
