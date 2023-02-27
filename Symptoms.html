@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Botoes</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="main.css">         
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="main.css" />
+    <!-- Adiciona o script do Google Translate -->
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+          pageLanguage: "en",
+          includedLanguages: "en,es,pt,ru",
+        });
+      }
+    </script>        
 </head>
 <body>
     <div class="button-container">
@@ -71,6 +84,4 @@
       <div id="content-container"></div>
       <script src="main.js"></script>
     </body>
-    </html> 
-  
-  
+    </html>
