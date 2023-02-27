@@ -1,0 +1,23 @@
+{
+    "en": {
+      "welcome": "Welcome",
+      "continue": "CONTINUE",
+      "welcome_image": "Welcome Image"
+    },
+    "pt": {
+      "welcome": "Bem-vindo",
+      "continue": "CONTINUAR",
+      "welcome_image": "Imagem de boas-vindas"
+    },
+    "es": {
+      "welcome": "Bienvenido",
+      "continue": "CONTINUAR",
+      "welcome_image": "Imagen de bienvenida"
+    },
+    "ru": {
+      "welcome": "Добро пожаловать",
+      "continue": "ПРОДОЛЖИТЬ",
+      "welcome_image": "Изображение приветствия"
+    }
+  }
+  
