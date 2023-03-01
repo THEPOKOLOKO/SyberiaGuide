@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Welcome</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css" />
     <style>
       body {
@@ -30,6 +30,16 @@
       }
       #button-wrapper {
         text-align: center;
+      }
+      @media screen and (max-width: 768px) {
+        #imagem {
+          width: 100%;
+          height: auto;
+        }
+        .button {
+          width: 100%;
+          max-width: 150px;
+        }
       }
     </style>
   </head>
