@@ -1,3 +1,23 @@
+/* CSS para tornar a página compatível com dispositivos móveis */
+@media screen and (max-width: 600px) {
+  .buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .button-container {
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  a {
+    max-width: none;
+    width: 100%;
+    max-height: none;
+  }
+}
+
+/* CSS original da página */
 body {
   margin: 0;
   font-size: 16px;
@@ -12,7 +32,6 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 60px; /* para dar espaço entre a imagem e os botões */  
-  padding-top: 60px; /* para criar espaço entre a imagem e o container de botões */
 }
 
 .buttons {
@@ -29,7 +48,6 @@ body {
   height: 100vh;
   text-align: center;
   padding: 20px;
-  margin-top: -60px; /* para levantar o container de botões */
 }
 
 a {
