@@ -1,38 +1,23 @@
 body {
   margin: 0;
   font-size: 16px;
-  background-image: url("barbedwire2.jpg");
+  background-image: url("barbedwire2.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-.header-image-container {
+
+.header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 60px; /* para dar espaço entre a imagem e os botões */  
-}
-
-.buttons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.button-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  text-align: center;
-  padding: 20px;
+  margin-bottom: 60px;
 }
 
 a {
   display: flex;
   align-items: center;
-  justify-content: center; /* centraliza o conteúdo horizontalmente */
+  justify-content: center;
   text-decoration: none;
   color: #FFF;
   background-color: #4D4D4D;
@@ -40,9 +25,9 @@ a {
   padding: 10px 20px;
   margin-bottom: 10px;
   transition: all 0.3s ease;
-  max-width: 200px; /* exemplo de valor */
-  width: 75%; /* adiciona largura total */
-  max-height: 100px; /* exemplo de valor */
+  max-width: 200px;
+  width: 100%;
+  max-height: 100px;
 }
 
 a:hover {
@@ -64,10 +49,10 @@ a:hover {
 
 .top-image img {
   width: 100%;
-  max-width: 800px; /* exemplo de valor */
+  max-width: 800px;
 }
 
-#content-container {
+.content {
   opacity: 0;
   animation: fade-in 0.5s ease-out forwards;
 }
