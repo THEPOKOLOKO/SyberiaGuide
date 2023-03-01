@@ -1,86 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Welcome</title>
-    <link rel="stylesheet" href="index.css" />
-    <style>
-      body {
-        background-color: #f5f5f5;
-      }
-      #imagem {
-        width: 659px;
-        height: 1172px;
-        margin: 0 auto;
-        display: block;
-      }
-      .button {
-        display: block;
-        width: 150px;
-        height: 50px;
-        margin: 20px auto;
-        background-color: #007bff;
-        color: #fff;
-        text-align: center;
-        text-decoration: none;
-        line-height: 50px;
-        font-size: 16px;
-        border-radius: 5px;
-      }
-      .language-select {
-        display: inline-block;
-        margin-top: 20px;
-      }
-      .language-select select {
-        width: 150px;
-        padding: 5px;
-        font-size: 16px;
-        border: none;
-        border-radius: 5px;
-        background-color: #007bff;
-        color: #fff;
-        cursor: pointer;
-      }
-      .language-options {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background-color: #007bff;
-        color: #fff;
-        font-size: 16px;
-        border-radius: 0 0 5px 5px;
-        z-index: 1;
-        display: none;
-      }
-      .language-options a {
-        display: block;
-        padding: 10px;
-        color: #fff;
-        text-decoration: none;
-      }
-      .language-options a:hover {
-        background-color: #0056b3;
-      }
-      #button-wrapper {
-        text-align: center;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="language-select">
-      <select id="langSelect">
-        <option value="en">English</option>
-        <option value="pt">Português</option>
-        <option value="es">Español</option>
-        <option value="ru">Русский</option>
-      </select>
-    </div>
-    <div id="button-wrapper">
-      <a href="Symptoms.html" class="button" data-translate="continue">CONTINUE</a>
-    </div>
-    <img id="imagem" src="img/SyberiaIndex.png" data-translate="welcome_image" />
-    <script src="translations.js"></script>
-    <script src="index.js"></script>
-  </body>
-</html>
+.button {
+  display: inline-block;
+  margin-left: 20px;
+}
+  .button-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .button a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #4286f4;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .button:hover a {
+    background-color: #325bd9;
+    transform: translateY(-3px);
+  }
+  
+  .button::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    z-index: -1;
+  }
+  
+  .button:hover::before {
+    height: 100%;
+  }
