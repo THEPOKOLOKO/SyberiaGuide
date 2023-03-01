@@ -1,39 +1,72 @@
 body {
-    background-color: #F5F5F5;
-  }
-  
-  .buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-  }
-  
-  a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #FFF;
-    background-color: #4D4D4D;
-    border-radius: 5px;
-    padding: 10px 20px;
-    margin-bottom: 10px;
-    transition: all 0.3s ease;
-    max-width: 200px; /* exemplo de valor */
-  }
-  
-  a:hover {
-    background-color: #999999;
-  }
-  
-  .icon {
-    width: 30px;
-    margin-right: 10px;
-  }
-  
-  .button-text {
-    font-size: 16px;
-  }
+  margin: 0;
+  font-size: 16px;
+  background-image: url("barbedwire2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.header-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px; /* para dar espaço entre a imagem e os botões */  
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* centraliza o conteúdo horizontalmente */
+  text-decoration: none;
+  color: #FFF;
+  background-color: #4D4D4D;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+  max-width: 200px; /* exemplo de valor */
+  width: 75%; /* adiciona largura total */
+  max-height: 100px; /* exemplo de valor */
+}
+
+a:hover {
+  background-color: #999999;
+}
+
+.icon {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.button-text {
+  font-size: 16px;
+}
+
+.top-image {
+  text-align: center;
+}
+
+.top-image img {
+  width: 100%;
+  max-width: 800px; /* exemplo de valor */
+}
+
 #content-container {
   opacity: 0;
   animation: fade-in 0.5s ease-out forwards;
@@ -60,4 +93,3 @@ body {
     opacity: 0;
   }
 }
-  
