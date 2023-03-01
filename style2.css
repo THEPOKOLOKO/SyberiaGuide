@@ -21,10 +21,12 @@ td {
   background-color: #312f2f;
   padding: 20px;
   border: 2px solid #4D4D4D;
+  font-size: 30px;
 }
 
 .header h1 {
   margin: 0;
+  font-size: px;
 }
 
 .header img {
@@ -32,6 +34,7 @@ td {
   height: auto;
   margin-top: 20px;
   margin-bottom: 20px;
+  
 }
 
 .header p {
@@ -87,6 +90,7 @@ td {
 
 .small-images {
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .img-caption {
@@ -103,4 +107,16 @@ table {
 
 td img[src$="barbedwire2.png"] {
   border: none;
+}
+.small-images p {
+  font-size: 20px; /* altere o valor aqui para aumentar ou diminuir o tamanho da fonte */
+  color: white; /* cor padrão do texto */
+}
+
+.small-images p.yellow {
+  color: yellow; /* cor amarela */
+}
+
+.small-images p.red {
+  color: red; /* cor vermelha */
 }
