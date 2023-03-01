@@ -1,106 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <title>Botoes</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="main.css" />
-    <!-- Adiciona o script do Google Translate -->
-    <script
-      type="text/javascript"
-      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-    ></script>
-    <script type="text/javascript">
-      function googleTranslateElementInit() {
-        new google.translate.TranslateElement({
-          pageLanguage: "auto",
-          includedLanguages: "en,es,pt,ru",
-        });
+    <meta charset="UTF-8">
+    <title>pagina1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style2.css">
+     <!-- Adiciona o script do Google Translate -->
+     <script
+     type="text/javascript"
+     src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+   ></script>
+   <script type="text/javascript">
+     function googleTranslateElementInit() {
+       new google.translate.TranslateElement({
+         pageLanguage: "auto",
+         includedLanguages: "en,es,pt,ru",
+       });
+     }
+   </script>
+  </head>
+  <body>
+    <style>
+      body {
+        background-color: #212020;
+        margin: 0;
       }
-    </script>        
-</head>
-<body>
-  <style>
-    body {
-      background-color: #1E111D;
-    }
-  </style>
-  <div class="header-image-container">
-    <img src="img/barbedwire2.png" alt="Descrição da imagem">
-  </div>
-  <div class="button-container">
-    <div class="button-container">
-        <a href="pagina1.html" class="button">
-          <img src="img/Pain.png" alt="Icone 1" class="icon">
-          <span class="button-text">PAIN</span>
-        </a>
+      .header {
+        position: relative;
+      }
+      .back-button {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-color: #4D4D4D;
+        border: none;
+        border-radius: 5px;
+        color: #FFF;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .small-images {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .small-images p {
+        font-size: 12px;
+        margin-top: 5px;
+      }
+      .content {
+        padding: 20px;
+      }
+    </style>
+    <div class="header">
+      <button class="back-button" onclick="window.history.back()">Voltar</button>
+      <h1>PAIN</h1>
+      <table>
+        <tr>
+          <td>
+            <img src="img/Pain.png" alt="">                  
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>The pain occurs when receiving various wounds. The degree of pain depends on the severity of the injury.</p>
+            <p> The pain goes away on its own after a time. For pain relief, use painkillers of the appropriate level or higher than the pain.</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="content">
+      <div class="small-images">
+        <img src="img/Blister tablets pills.png" alt="Imagem 1" width="100"> 
+        <p>Texto da Imagem 1</p>
+        <p class="yellow">Texto da Imagem 1</p>
+        <p>Texto da Imagem 1</p>
       </div>
-        <a href="pagina2.html" class="button">
-          <img src="img/Food Poisoning-Stomach Aches.png" alt="Icone 2" class="icon">
-          <span class="button-text">FOOD POISONING</span>
-        </a>
-        <a href="pagina3.html" class="button">
-          <img src="img/Hematomas-Bruises.png" alt="Icone 3" class="icon">
-          <span class="button-text">HEMATOMAS</span>
-        </a>
-      <a href="pagina4.html"> 
-        <img src="img/Scars- Cuts.png" alt="Icone 4" class="icon">
-        <span class="button-text">SCARS</span>
-      </a>
-      <a href="pagina.html">
-        <img src="img/Sepsis.png" alt="Icone 5" class="icon">
-        <span class="button-text">SEPSIS</span>
-      </a>
-      <a href="pagina.html">
-        <img src="img/Stab-Wounds.png" alt="Icone 6" class="icon">
-        <span class="button-text">Botão 6</span>
-      </a>
-      <a href="pagina.html">
-        <img src="img/Bullethit Wounds.png" alt="Icone 7" class="icon">
-        <span class="button-text">Botão 7</span>
-      </a>
-      <a href="pagina.html">
-        <img src="img/VisceraDamage.png" alt="Icone 8" class="icon">
-        <span class="button-text">Botão 8</span>
-      </a>
-      <a href="pagina.html">
-        <img src="img/Concussion.png" alt="Icone 9" class="icon">
-        <span class="button-text">Botão 9</span>
-      </a>
-      <a href="pagina.html">
-        <img src="img/Hematopoiesis.png" alt="Icone 10" class="icon">
-        <span class="button-text">Botão 10</span>
-      </a>
-      <a href="pagina.html">
-        <img src="img/hemostasis.png" alt="Icone 11" class="icon">
-        <span class="button-text">Botão 11</span>
-      </a>
-      <a href="pagina.html">
-        <img src="img/Overdosed.png" alt="Icone 12" class="icon">
-        <span class="button-text">Botão 12</span>
-      </a>
-      <a href="pagina.html">
-        <img src="img/Colds-Influenza-Pneumonia.png" alt="Icone 13" class="icon">
-        <span class="button-text">Botão 13</span>
-      </a>
-      <a href="pagina.html">
-        <img src="img/zVIRUSS.png" alt="Icone 14" class="icon">
-        <span class="button-text">Botão 14</span>
-      </a>
-      <a href="pagina.html">
-        <img src="img/Biohazard.png" alt="Icone 15" class="icon">
-        <span class="button-text">Botão 15</span>
-      </a>      
-      <div id="content-container"></div>
-      <script src="main.js"></script>
-    </body>
-    </html>
-  </td>
-</tr>
-<tr>
-  <td></td>
-  <td>
-    <img src="img/barbedwire2.png">
-  </td>
-</tr>
-</table>
+      <div class="small-images">
+        <img src="img/ampoule.png" alt="Imagem 2" width="100">
+        <p>Texto da Imagem 2</p>
+        <p class="red">Texto da Imagem 2</p>                    
+        <p>Texto da Imagem 2</p>
+      </div>
+      <div class="small-images">
+        <img src="img/injector.png" alt="Imagem 3" width="100">
+        <p>Texto da Imagem 3</p>
+        <p class="yellow">Texto da Imagem 3</p>
+        <p>Texto da Imagem 3</p>
+      </div>
+      <img src="img/barbedwire2.png" alt="Imagem de Separação" width="100%">
+    </div>
+  </body>
+</html>
