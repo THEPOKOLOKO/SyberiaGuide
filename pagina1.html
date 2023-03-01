@@ -4,12 +4,46 @@
     <meta charset="UTF-8">
     <title>pagina1</title>
     <link rel="stylesheet" href="style2.css">
+     <!-- Adiciona o script do Google Translate -->
+     <script
+     type="text/javascript"
+     src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+   ></script>
+   <script type="text/javascript">
+     function googleTranslateElementInit() {
+       new google.translate.TranslateElement({
+         pageLanguage: "auto",
+         includedLanguages: "en,es,pt,ru",
+       });
+     }
+   </script>
   </head>
   <body>
+    <style>
+      body {
+        background-color: #212020;
+      }
+      .header {
+        position: relative;
+      }
+      .back-button {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-color: #4D4D4D;
+        border: none;
+        border-radius: 5px;
+        color: #FFF;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
     <table>
       <tr>
         <td>
           <div class="header">
+            <button class="back-button" onclick="window.history.back()">Voltar</button>
             <h1>PAIN</h1>
             <table>
               <tr>
@@ -34,17 +68,37 @@
               <tr>
                 <td>
                   <div class="small-images">
-                    <img src="img/Blister tablets pills.png" alt="Imagem 1" width="100">                    
+                    <img src="img/Blister tablets pills.png" alt="Imagem 1" width="100"> 
+                    <p>Texto da Imagem 1</p>
+                    <p>Texto da Imagem 1</p>
+                    <p>Texto da Imagem 1</p>
+                    <p class="yellow">Texto da Imagem 1</p>
+                    <p>Texto da Imagem 1</p>
+                    <p>Texto da Imagem 1</p>
+                    <p>Texto da Imagem 1</p>                   
                   </div>
                 </td>
                 <td>
                   <div class="small-images">
-                    <img src="img/ampoule.png" alt="Imagem 2" width="100">                    
+                    <img src="img/ampoule.png" alt="Imagem 2" width="100">
+                    <p>Texto da Imagem 2</p>
+                    <p>Texto da Imagem 2</p>
+                    <p>Texto da Imagem 2</p>
+                    <p class="red">Texto da Imagem 2</p>                    
+                    <p>Texto da Imagem 2</p>
+                    <p>Texto da Imagem 2</p>
                   </div>
                 </td>
                 <td>
                   <div class="small-images">
-                    <img src="img/injector.png" alt="Imagem 3" width="100">                    
+                    <img src="img/injector.png" alt="Imagem 3" width="100">
+                    <p>Texto da Imagem 3</p>
+                    <p>Texto da Imagem 3</p>
+                    <p>Texto da Imagem 3</p>
+                    <p>Texto da Imagem 3</p>
+                    <p class="yellow">Texto da Imagem 3</p>
+                    <p>Texto da Imagem 3</p>
+                    <p>Texto da Imagem 3</p>                    
                   </div>
                 </td>
               </tr>
@@ -56,29 +110,7 @@
                 </td>
               </tr>
               <tr>
-                <td>
-                  <ul class="text-list">
-                    <li>
-                      <img src="img/TabletsICO.png" alt="Imagem Lista 1">
-                      <span>Texto da Lista 1</span>
-                    </li>
-                    <li>
-                      <img src="img/AmpouleICO.png" alt="Imagem Lista 2">
-                      <span>Texto da Lista 2</span>
-                    </li>
-                    <li>
-                      <img src="img/InjectorICO.png" alt="Imagem Lista 3">
-                      <span>Texto da Lista 3</span>
-                    </li>
-                    <li>
-                      <img src="imagem-lista-4.png" alt="Imagem Lista 4">
-                      <span>Texto da Lista 4</span>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-            </table>
-          </div>
+                <td>                 
         </td>
       </tr>
     </table>
