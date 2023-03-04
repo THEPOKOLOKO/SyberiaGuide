@@ -1,80 +1,122 @@
+/* Estilos para toda a página */
 body {
-  margin: 0;
-  font-size: 16px;
-  background-image: url("barbedwire2.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
-.header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 60px;
-}
-
-a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  color: #FFF;
-  background-color: #4D4D4D;
-  border-radius: 5px;
-  padding: 10px 20px;
-  margin-bottom: 10px;
-  transition: all 0.3s ease;
-  max-width: 200px;
+table {
   width: 100%;
-  max-height: 100px;
+  border-collapse: collapse;
 }
 
-a:hover {
-  background-color: #999999;
+td {
+  vertical-align: top;
+  padding: 20px;
 }
 
-.icon {
-  width: 30px;
+/* Estilos para o cabeçalho */
+.header {
+  text-align: center;
+  background-color: #312f2f;
+  padding: 20px;
+  border: 2px solid #4D4D4D;
+  font-size: 30px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: px;
+}
+
+.header img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
+}
+
+.header p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Estilos para as imagens pequenas */
+.small-images img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+/* Estilos para a lista de texto */
+.text-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.text-list li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.text-list li img {
   margin-right: 10px;
 }
 
-.button-text {
-  font-size: 16px;
+.text-list li span {
+  line-height: 1.5;
+  flex: 1;
 }
 
-.top-image {
+/* Estilos para a imagem de separação */
+.content img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #4D4D4D;
+}
+.header table {
+  margin: 0 auto;
+}
+
+.small-images {
   text-align: center;
+  margin-bottom: 10px;
 }
 
-.top-image img {
-  width: 100%;
-  max-width: 800px;
+.img-caption {
+  text-align: center;
+  margin-top: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+table {
+  border-collapse: collapse;
 }
 
-.content {
-  opacity: 0;
-  animation: fade-in 0.5s ease-out forwards;
+td img[src$="barbedwire2.png"] {
+  border: none;
+}
+.small-images p {
+  font-size: 20px; /* altere o valor aqui para aumentar ou diminuir o tamanho da fonte */
+  color: white; /* cor padrão do texto */
 }
 
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.small-images p.yellow {
+  color: yellow; /* cor amarela */
 }
 
-.fade-out {
-  animation: fade-out 0.5s ease-in forwards;
-}
-
-@keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+.small-images p.red {
+  color: red; /* cor vermelha */
 }
